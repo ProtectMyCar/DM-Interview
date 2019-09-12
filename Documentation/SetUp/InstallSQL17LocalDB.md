@@ -1,6 +1,6 @@
 # Installing and Configuring SQL Server 2017 Express/LocalDB
 
-[Back to Home](/README.md) > Installing and Configuring SQL Server 2017 Express/LocalDB
+[Back to Home](./README.md) > Installing and Configuring SQL Server 2017 Express/LocalDB
 
 In order to successfully build and use a local copy of PMC databases you should be running SQL Server 2017 (V14).
 
@@ -39,7 +39,7 @@ In order to successfully build and use a local copy of PMC databases you should 
    ```sqllocaldb create ProjectsV14```
 
 10. At this point you should be able to connect to your local database.
-   ![Logging In To LocalDb](images/LoginToLocalDb.png)
+   ![Logging In To LocalDb](images/LoginToLocalDb.PNG)
 
 ### Setting Up the Interview Database
 
