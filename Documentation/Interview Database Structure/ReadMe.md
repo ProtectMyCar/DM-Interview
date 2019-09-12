@@ -9,4 +9,4 @@
 
 ## Diagram
 
-![](..\Images\DB-Interview_Diagram.png)
+![](Images/DB-Interview_Diagram.png)
