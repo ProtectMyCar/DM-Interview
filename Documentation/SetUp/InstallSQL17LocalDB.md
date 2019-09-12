@@ -1,6 +1,6 @@
 # Installing and Configuring SQL Server 2017 Express/LocalDB
 
-[Back to Home](./README.md) > Installing and Configuring SQL Server 2017 Express/LocalDB
+[Back to Home](./ReadMe.md) > Installing and Configuring SQL Server 2017 Express/LocalDB
 
 In order to successfully build and use a local copy of PMC databases you should be running SQL Server 2017 (V14).
 
