@@ -45,11 +45,13 @@ In order to successfully build and use a local copy of PMC databases you should 
 
 1. Download `InterviewDB.bak` from the [github repository](https://github.com/ProtectMyCar/DM-Interview/blob/master/Documentation/SetUp/Database%20Backup/InterviewDB.bak "Gitgub").
 
-11. Next, login to your local sql server. Once Logged in, Expand the server and right click on the databases folder then select restore
+2. Next, login to your local sql server. Once Logged in, Expand the server and right click on the databases folder then select restore
    ![Restoring Db](images/RestoreDatabse.PNG)
 
-12. Finally Select device and point to the .bak file downloaded you downloaded from the repo
+3. Finally Select device and point to the .bak file downloaded you downloaded from the repo
 ![Restoring Db](images/RestoreDatabse2.PNG)
 
-13. You should now be able to see the database and begin querying.
+5. If you get an error during this step, go to the Files Tab on the left, and check the box that says "Reallocate all files to folder"
+
+4. You should now be able to see the database and begin querying.
 
