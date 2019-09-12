@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DB-Interview</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{d387d340-c354-4778-9d4a-4f89a177a8a1}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>DM_Training</RootNamespace>
+    <AssemblyName>DM_Training</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <TargetDatabase>DB-Interview</TargetDatabase>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Schemas" />
+    <Folder Include="Schemas\dbo" />
+    <Folder Include="Schemas\claims" />
+    <Folder Include="Schemas\dbo\Tables" />
+    <Folder Include="Schemas\dbo\Scripts" />
+    <Folder Include="Schemas\claims\Tables" />
+    <Folder Include="Schemas\claims\Scripts" />
+    <Folder Include="Schemas\sample" />
+    <Folder Include="Schemas\sample\Functions" />
+    <Folder Include="Schemas\sample\Scripts" />
+    <Folder Include="Schemas\sample\Tables" />
+    <Folder Include="Schemas\sample\Types" />
+    <Folder Include="Schemas\util" />
+    <Folder Include="Schemas\util\Functions" />
+    <Folder Include="Schemas\util\Types" />
+    <Folder Include="Scripts" />
+    <Folder Include="Schemas\dbo\Scripts\SampleData" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Schemas\sample\Functions\udf_LoremIpsum.sql" />
+    <None Include="Schemas\sample\Functions\udf_RandomFirstName.sql" />
+    <None Include="Schemas\sample\Functions\udf_RandomLastName.sql" />
+    <None Include="Schemas\sample\Functions\udf_RandomStreetAddress.sql" />
+    <None Include="Schemas\sample\Functions\udf_RandomUid.sql" />
+    <None Include="Schemas\sample\Scripts\FirstName.sql" />
+    <None Include="Schemas\sample\Scripts\LastName.sql" />
+    <None Include="Schemas\sample\Scripts\Row.sql" />
+    <None Include="Schemas\sample\Scripts\Street.sql" />
+    <None Include="Schemas\sample\Tables\FirstName.sql" />
+    <None Include="Schemas\sample\Tables\LastName.sql" />
+    <None Include="Schemas\sample\Tables\Row.sql" />
+    <None Include="Schemas\sample\Tables\Street.sql" />
+    <None Include="Schemas\sample\Types\UidCollection.sql" />
+    <Build Include="Schemas\util\Functions\udf_RandomDecimal.sql" />
+    <Build Include="Schemas\util\Functions\udf_RandomInt.sql" />
+    <Build Include="Schemas\util\Functions\udf_RandomUid.sql" />
+    <Build Include="Schemas\util\Functions\udf_RemoveProblematicCharacters.sql" />
+    <Build Include="Schemas\util\Types\UidCollection.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Schemas\dbo\Tables\Contract.sql" />
+    <Build Include="Schemas\dbo\Tables\Customer.sql" />
+    <Build Include="Schemas\dbo\Tables\Address.sql" />
+    <Build Include="Schemas\dbo\Tables\CustomerVehicle.sql" />
+    <Build Include="Schemas\dbo\Tables\Vehicle.sql" />
+    <PostDeploy Include="Scripts\PostDeployment.sql" />
+    <Build Include="Schemas\Schemas.sql" />
+    <Build Include="Schemas\dbo\Tables\ZipCode.sql" />
+    <None Include="Schemas\dbo\Scripts\SampleData\Address.sql" />
+    <None Include="Schemas\dbo\Scripts\SampleData\Contract.sql" />
+    <None Include="Schemas\dbo\Scripts\SampleData\Customer.sql" />
+    <None Include="Schemas\dbo\Scripts\SampleData\CustomerVehicle.sql" />
+    <None Include="Schemas\dbo\Scripts\SampleData\Vehicle.sql" />
+    <None Include="Schemas\dbo\Scripts\SampleData\ZipCode.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="apply_sample_data">
+      <DefaultValue>True</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="apply_seed_data">
+      <DefaultValue>True</DefaultValue>
+      <Value>$(SqlCmdVar__2)</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
+</Project>
