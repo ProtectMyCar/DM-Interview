@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DB-Interview", "DB-Interview.sqlproj", "{D387D340-C354-4778-9D4A-4F89A177A8A1}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DB-Interview", "DB-Interview\DB-Interview.sqlproj", "{D387D340-C354-4778-9D4A-4F89A177A8A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
