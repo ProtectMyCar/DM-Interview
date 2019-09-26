@@ -6,7 +6,7 @@ In order to successfully build and use a local copy of PMC databases you should 
 
 ## Instructions
 
-###Configuring SQL Server
+### Configuring SQL Server
 
 1. Download and run the SQL Server Express 2017 installer from here: [https://www.microsoft.com/en-us/sql-server/sql-server-editions-express](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express)
 
@@ -51,6 +51,6 @@ In order to successfully build and use a local copy of PMC databases you should 
 3. Finally Select device and point to the .bak file downloaded you downloaded from the repo
 ![Restoring Db](Images/RestoreDatabse2.PNG)
 
-4. If you get an error during this step, go to the Files Tab on the left, and check the box that says "Reallocate all files to folder"
+4. If you get an error during this step, go to the Files Tab on the left, and check the box that says "Relocate all files to folder"
 
 5. You should now be able to see the database and begin querying.
