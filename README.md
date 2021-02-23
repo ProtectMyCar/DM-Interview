@@ -1,10 +1,10 @@
-# Protect My Car - Data Management Database Technical Interview
+# Protect My Car - Technical Interview
 
 ![](Docs/Images/protect-my-car-logo-large.png)
 
 ## Welcome!
 
-Congratulations you've moved on to the next step in the interview process with Protect My Car's Data Management Team! We are excited to talk to you and see first hand your database experience.
+Congratulations! You've moved on to the next step in the interview process with Protect My Car's Information Technology Team! We are excited to talk to you and see first hand your database experience.
 
 ## Preparing for your technical interview
 
