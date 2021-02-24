@@ -53,4 +53,4 @@ If you're interviewing for the Data Management team during your technical interv
 
 ## Diagram
 
-![](Docs/Images/DB-Interview_Diagram.png)
+![](Docs/Diagrams/DatabaseERD.drawio.svg)
