@@ -23,9 +23,11 @@ If you'd prefer to just [restore a backup file](/Docs/RestoreFromBackup.md) you 
 
 ## The Technical Interview Process
 
-During your technical interview you will be asked to write queries from scratch using the database that is produced by this repository. You will not be expected to know everything about the simplified version of our database contained in this SQL Server Database Project. However, you now have access to the exact schema and sample data that we will ask you to query data from, so you can get as familiar with it as you like.
+### Data Management Team
 
-### Interview Questions
+If you're interviewing for the Data Management team during your technical interview you will be asked to write queries from scratch using the database that is produced by this repository. You will not be expected to know everything about the simplified version of our database contained in this SQL Server Database Project. However, you now have access to the exact schema and sample data that we will ask you to query data from, so you can get as familiar with it as you like.
+
+#### Interview Questions
 
 The technical interview should be pretty painless, there are ten questions, starting with the easiest stuff and they get progressivly harder and require some creativity. We're not expecting you to get these 100% the same way we do, but we can tell a lot from your thought process as you work through them. If you've made it this far, here is a little reward, these are the first three questions from the actual technical interview. 
 
@@ -33,9 +35,13 @@ The technical interview should be pretty painless, there are ten questions, star
 2. Select the contract `InternalId` and `DateCreated` of each contract with a contract create date in the month of January 2019/2020.
 3. Select the contract `InternalId` of anyone with the last name Torres.
 
-## Database Structure
+## Development Team
 
-### Tables
+If you're interviewing for the Data Management team during your technical interview you will be asked to work on a .net project and utilize the database built from the database project in this solution.
+
+# Database Structure
+
+## Tables
 
 |Table Name|Description|
 |----------|-----------|
@@ -45,6 +51,6 @@ The technical interview should be pretty painless, there are ten questions, star
 |dbo.Address|Represents an address|
 |dbo.Vehicle|Represents a vehicle template|
 
-### Diagram
+## Diagram
 
 ![](Docs/Images/DB-Interview_Diagram.png)
