@@ -19,8 +19,6 @@ Visual Studio 2019 Community Edition with [SQL Server Data Tools](https://docs.m
 
 If you've installed Visual Studio 2019 go ahead and open the [DM-Interview solution file](/DM-Interview.sln) and build the database. After the build is complete you should see a new database in `(LocalDB)/ProjectsV13` with all the tables and sample data.
 
-If you'd prefer to just [restore a backup file](/Docs/RestoreFromBackup.md) you can restore the included database backup file into a new database on any edition of SQL Server 2017. [Backup file](/Docs/Files/InterviewDB.bak)
-
 ## The Technical Interview Process
 
 ### Data Management Team
