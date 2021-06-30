@@ -33,9 +33,9 @@ The technical interview should be pretty painless, there are ten questions, star
 2. Select the contract `InternalId` and `DateCreated` of each contract with a contract create date in the month of January 2019/2020.
 3. Select the contract `InternalId` of anyone with the last name Torres.
 
-## Development Team
+### Development Team
 
-If you're interviewing for the Data Management team during your technical interview you will be asked to work on a .net project and utilize the database built from the database project in this solution.
+If you're interviewing for the Development team, during your technical interview, you will be asked to work on a .net project and utilize the database built from the database project in this solution.
 
 # Database Structure
 
