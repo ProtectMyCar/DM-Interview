@@ -4,7 +4,7 @@
 
 ## Welcome!
 
-Congratulations! You've moved on to the next step in the interview process with Protect My Car's Information Technology Team! We are excited to talk to you and see first hand your database experience.
+Congratulations! You've moved on to the next step in the interview process with Protect My Car's Information Technology Team! We are excited to talk to you and see first hand your database/development experience.
 
 ## Preparing for your technical interview
 
