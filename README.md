@@ -17,7 +17,7 @@ Using the links below download and install the following software:
 
 Visual Studio 2019 Community Edition with [SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-2017) should give you everything you need to build, deploy objects & sample data (to [SQL Server LocalDB](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-2017) which is included in SQL Server Data Tools), and query the interview DB but you might find using SQL Server Management Studio (SSMS) is more familiar.
 
-If you've installed Visual Studio 2019 go ahead and open the [DM-Interview solution file](/DM-Interview.sln) and build the database. After the build is complete you should see a new database in `(LocalDB)/ProjectsV13` with all the tables and sample data.
+If you've installed Visual Studio 2019 go ahead and open the [DM-Interview solution file](/DM-Interview.sln) and build the database. After the build is complete you should see a new database in `(LocalDB)\ProjectsV13` with all the tables and sample data.
 
 ## The Technical Interview Process
 
