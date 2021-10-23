@@ -1,0 +1,34 @@
+name: Database Project(s) Build
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - Releases/*
+      - UAT
+  pull_request:
+    branches:
+      - master
+      - develop
+      - Releases/*
+      - UAT
+
+jobs:
+
+  Build-DB-Technical-Interview:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v1
+
+    - name: "Build Database Technical-Interview"
+      run: |
+          & 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\MSBuild.exe' DB-Technical-Interview\DB-Technical-Interview.sqlproj /p:Configuration=Release
+
+    - name: "Save Artifact - Technical-Interview"
+      uses: actions/upload-artifact@master
+      with:
+        name: DB-InContact
+        path: ${{ github.workspace }}/DB-Technical-Interview/bin/Release/DB-Technical-Interview.dacpac
+        if-no-files-found: error
